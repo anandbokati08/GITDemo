@@ -6,18 +6,19 @@ import junit.framework.TestSuite;
 
 /**
  * Unit test for simple App.
+ * 
  */
-public class AppTest 
-    extends TestCase
+public class AppTest extends TestCase
+
+    
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
+    public int a,b;
     public AppTest( String testName )
     {
         super( testName );
+        
+        System.out.println(a);
+        System.out.println(b);
     }
 
     /**
@@ -26,13 +27,16 @@ public class AppTest
     public static Test suite()
     {
         return new TestSuite( AppTest.class );
+        
+      
     }
 
-    /**
-     * Rigourous Test :-)
-     */
+    int c;
     public void testApp()
+    
     {
+    	
+    	System.out.println(c);
         assertTrue( true );
     }
 }
